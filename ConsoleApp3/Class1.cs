@@ -31,6 +31,11 @@ namespace ConsoleApp3
 
         public void Посадить(Растение растение)
         {
+            if  (растение==null)
+            {
+                throw new NullReferenceException("ошибка");
+                
+            }
             Растения.Add(растение);
             Console.WriteLine($"Садовник {Садовник} посадил дерево {растение.Сорт}");
         }
