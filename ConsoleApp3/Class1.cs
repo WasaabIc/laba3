@@ -33,7 +33,7 @@ namespace ConsoleApp3
         {
             if  (растение==null)
             {
-                throw new NullReferenceException("ошибка");
+                throw new ArgumentNullException("ошибка");
                 
             }
             Растения.Add(растение);
